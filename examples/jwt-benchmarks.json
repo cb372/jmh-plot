@@ -1,0 +1,310 @@
+[
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.signWithEC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 340.8055456838339,
+            "scoreError" : 45.22328423778955,
+            "scoreConfidence" : [
+                295.58226144604436,
+                386.0288299216234
+            ],
+            "scorePercentiles" : {
+                "0.0" : 321.3799490984982,
+                "50.0" : 345.14422210754395,
+                "90.0" : 352.05056710247027,
+                "95.0" : 352.05056710247027,
+                "99.0" : 352.05056710247027,
+                "99.9" : 352.05056710247027,
+                "99.99" : 352.05056710247027,
+                "99.999" : 352.05056710247027,
+                "99.9999" : 352.05056710247027,
+                "100.0" : 352.05056710247027
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    321.3799490984982,
+                    339.4318112261435,
+                    345.14422210754395,
+                    346.02117888451346,
+                    352.05056710247027
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.signWithEdDSA",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 9930.290634520221,
+            "scoreError" : 666.0765432869888,
+            "scoreConfidence" : [
+                9264.214091233232,
+                10596.36717780721
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9773.121081755535,
+                "50.0" : 9835.441922030997,
+                "90.0" : 10170.493623259636,
+                "95.0" : 10170.493623259636,
+                "99.0" : 10170.493623259636,
+                "99.9" : 10170.493623259636,
+                "99.99" : 10170.493623259636,
+                "99.999" : 10170.493623259636,
+                "99.9999" : 10170.493623259636,
+                "100.0" : 10170.493623259636
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    9817.413425085982,
+                    10170.493623259636,
+                    9835.441922030997,
+                    9773.121081755535,
+                    10054.98312046895
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.signWithRSA",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 118.90016995468713,
+            "scoreError" : 13.140570102097458,
+            "scoreConfidence" : [
+                105.75959985258967,
+                132.04074005678459
+            ],
+            "scorePercentiles" : {
+                "0.0" : 113.82596201683211,
+                "50.0" : 119.25067884340315,
+                "90.0" : 122.08287975268439,
+                "95.0" : 122.08287975268439,
+                "99.0" : 122.08287975268439,
+                "99.9" : 122.08287975268439,
+                "99.99" : 122.08287975268439,
+                "99.999" : 122.08287975268439,
+                "99.9999" : 122.08287975268439,
+                "100.0" : 122.08287975268439
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    122.08287975268439,
+                    113.82596201683211,
+                    117.50329603289987,
+                    119.25067884340315,
+                    121.83803312761609
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.verifyWithEC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 183.16690045194144,
+            "scoreError" : 22.856376263959987,
+            "scoreConfidence" : [
+                160.31052418798146,
+                206.02327671590143
+            ],
+            "scorePercentiles" : {
+                "0.0" : 173.45563864802602,
+                "50.0" : 183.41988918070365,
+                "90.0" : 188.54749143836565,
+                "95.0" : 188.54749143836565,
+                "99.0" : 188.54749143836565,
+                "99.9" : 188.54749143836565,
+                "99.99" : 188.54749143836565,
+                "99.999" : 188.54749143836565,
+                "99.9999" : 188.54749143836565,
+                "100.0" : 188.54749143836565
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    187.36147446248148,
+                    173.45563864802602,
+                    183.05000853013038,
+                    188.54749143836565,
+                    183.41988918070365
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.verifyWithEdDSA",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4894.052126010862,
+            "scoreError" : 414.6347698188688,
+            "scoreConfidence" : [
+                4479.417356191992,
+                5308.686895829731
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4725.462767579051,
+                "50.0" : 4908.6465244610245,
+                "90.0" : 5003.472246441111,
+                "95.0" : 5003.472246441111,
+                "99.0" : 5003.472246441111,
+                "99.9" : 5003.472246441111,
+                "99.99" : 5003.472246441111,
+                "99.999" : 5003.472246441111,
+                "99.9999" : 5003.472246441111,
+                "100.0" : 5003.472246441111
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4908.6465244610245,
+                    5003.472246441111,
+                    4867.463345765192,
+                    4965.215745807929,
+                    4725.462767579051
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.32",
+        "benchmark" : "bench.JwtSigningBenchmark.verifyWithRSA",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/chris/Library/Caches/Coursier/jvm/amazon-corretto@1.17.0-0.35.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17+35-LTS",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 5896.120127970818,
+            "scoreError" : 774.8431159163105,
+            "scoreConfidence" : [
+                5121.277012054508,
+                6670.963243887129
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5542.577762416484,
+                "50.0" : 5977.42393241064,
+                "90.0" : 6018.35917499424,
+                "95.0" : 6018.35917499424,
+                "99.0" : 6018.35917499424,
+                "99.9" : 6018.35917499424,
+                "99.99" : 6018.35917499424,
+                "99.999" : 6018.35917499424,
+                "99.9999" : 6018.35917499424,
+                "100.0" : 6018.35917499424
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    6016.781934649002,
+                    6018.35917499424,
+                    5542.577762416484,
+                    5925.457835383726,
+                    5977.42393241064
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
