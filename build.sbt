@@ -6,3 +6,4 @@ libraryDependencies ++= Seq(
   "com.monovore"  %% "decline-effect" % "2.4.1"
 )
 assembly / assemblyJarName := "jmh-plot.jar"
+enablePlugins(ScalaNativePlugin)
