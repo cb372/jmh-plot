@@ -5,3 +5,4 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-effect"    % "3.4.7",
   "com.monovore"  %% "decline-effect" % "2.4.1"
 )
+assembly / assemblyJarName := "jmh-plot.jar"
