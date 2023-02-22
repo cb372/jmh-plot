@@ -5,6 +5,7 @@ import com.monovore.decline.Opts
 import com.monovore.decline.effect.CommandIOApp
 import io.circe.parser.decode
 
+import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 
 object Main
@@ -16,7 +17,7 @@ object Main
   override def main: Opts[IO[ExitCode]] =
     Options.parser.map { options =>
       for {
-        json       <- IO(Files.readString(options.inputFile))
+        json       <- IO(String(Files.readAllBytes(options.inputFile), StandardCharsets.UTF_8))
         benchmarks <- IO.fromEither(decode[List[Benchmark]](json))
         output = render(benchmarks, options)
         _ <- IO.println(output)
