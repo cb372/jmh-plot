@@ -5,6 +5,12 @@ results using [gnuplot](http://www.gnuplot.info/).
 
 ![Example plot](./examples/jwt-benchmarks.png)
 
+## How to install
+
+Only MacOS x86 binary available for now.
+
+Download it from the `bin` directory in this repo and add it to your `PATH`.
+
 ## How to use
 
 When you run JMH (or [sbt-jmh](https://github.com/sbt/sbt-jmh)), pass these
@@ -17,14 +23,14 @@ arguments to make JMH write its results to a JSON file:
 Then feed that JSON file to `jmh-plot`:
 
 ```
-java -jar jmh-plot.jar my-benchmarks.json
+jmh-plot my-benchmarks.json
 ```
 
 `jmh-plot` will print a gnuplot script to stdout, so you can pipe it straight
 into `gnuplot`:
 
 ```
-java -jar jmh-plot.jar my-benchmarks.json | gnuplot
+jmh-plot my-benchmarks.json | gnuplot
 ```
 
 ## CLI options
@@ -44,12 +50,14 @@ Options and flags:
 ## How to build
 
 ```
-sbt assembly
+sbt nativeLink
 ```
+
+Or if you're happy running it with `java -jar` you can build it with `sbt
+assembly` instead.
 
 ## Future work
 
-* Scala Native
 * Support benchmarks with parameters
 * Figure out a good way to distribute the tool. Coursier? Scala Native binaries
   on GitHub releases?
